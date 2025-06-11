@@ -1,29 +1,13 @@
 # CNN
 ## Trained a CNN on CIFAR-10, then use transfer learning/fine-tuning to adapt the model to new datasets (Caltech-101, Horse/Cat/Dog classification) and pretrained models.
 
-Frameworks: TensorFlow/Keras or PyTorch.
+### Frameworks: TensorFlow/Keras or PyTorch.
 
-Preprocessing: Emphasized throughout.
+### Evaluation Metrics: Report Precision, Recall, F1-Score for test data in all models/phases.
 
-Hyperparameter Tuning: Required in all phases.
+### Phases:
 
-Evaluation Metrics: Report Precision, Recall, F1-Score for test data in all models/phases.
-
-Visualization: Generate for all models/phases:
-
-Learning curves
-
-Confusion Matrices
-
-ROC Curves
-
-Sample test images (true vs. predicted label)
-
-Overfitting Prevention: Critical in Phases 2 & 3 (Data Augmentation, other techniques).
-
-Phases:
-
-Phase 1: Model Design (CIFAR-10)
+#### Phase 1: Model Design (CIFAR-10)
 
 Design & train a CNN (< 1 million parameters) on CIFAR-10.
 
@@ -33,7 +17,7 @@ Overfitting allowed in this phase only.
 
 Dataset: CIFAR-10 (45k Train, 5k Val, 10k Test).
 
-Phase 2: Prevent Overfitting (CIFAR-10)
+#### Phase 2: Prevent Overfitting (CIFAR-10)
 
 Apply techniques (Data Augmentation + others) to the Phase 1 model to combat overfitting.
 
@@ -43,7 +27,7 @@ Perform hyperparameter tuning (e.g., optimizers).
 
 Save the best model for Phase 3.
 
-Phase 3: Transfer Learning
+#### Phase 3: Transfer Learning
 
 Use the saved best model from Phase 2.
 
